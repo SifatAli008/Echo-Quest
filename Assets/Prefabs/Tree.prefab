@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 9196484824798614773}
   - component: {fileID: 9196484824798614772}
   - component: {fileID: 9196484824798614774}
+  - component: {fileID: 4232872598061422797}
+  - component: {fileID: 3646599741840197959}
+  - component: {fileID: 1280677497024544572}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -101,3 +104,45 @@ CapsuleCollider2D:
   m_Offset: {x: 0.023950335, y: -0.05957536}
   m_Size: {x: 1.48488, y: 0.7708199}
   m_Direction: 1
+--- !u!58 &4232872598061422797
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196484824798614779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.7954658}
+  serializedVersion: 2
+  m_Radius: 1.404534
+--- !u!114 &3646599741840197959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196484824798614779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53bc87628f703314eaeff4f21f1d424a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transparencyAmount: 0.8
+  fadeTime: 0.4
+--- !u!114 &1280677497024544572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9196484824798614779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c1e6d31b6a3ac4e82545a64af786d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

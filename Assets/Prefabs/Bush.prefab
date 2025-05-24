@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3012366960782264847}
   - component: {fileID: 3012366960782264832}
   - component: {fileID: 3012366960782264846}
+  - component: {fileID: 3081840361181819893}
+  - component: {fileID: 2506788195819978937}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3012366960782264833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.7673655, y: -2.030161, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,9 +97,37 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.003924084, y: -0.000000023841858}
-  m_Size: {x: 0.12599221, y: 0.13384023}
+  m_Offset: {x: -0.003924084, y: -0.00916884}
+  m_Size: {x: 0.08103657, y: 0.09152617}
   m_Direction: 0
+--- !u!114 &3081840361181819893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012366960782264833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6eb2dabe4c49b48ab4dc23577812d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyVFX: {fileID: 3986524754296276822, guid: f068262ae87b67340a989b6b6a2c0df5, type: 3}
+--- !u!114 &2506788195819978937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012366960782264833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a310afbbd5f0549956a2e94e126670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldCoin: {fileID: 2571598685547446735, guid: 9c98eab16eaf0e84a8668a11c6af788f, type: 3}
+  healthGlobe: {fileID: 2571598685547446735, guid: d376f45354b7e9d41a0dcf478e2e7bfd, type: 3}
+  staminaGlobe: {fileID: 2571598685547446735, guid: 0234793cc0a80934db9b3fae85041f39, type: 3}

@@ -1,25 +1,33 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Knockback : MonoBehaviour
 {
     public bool GettingKnockedBack { get; private set; }
 
-    [SerializeField] private float knockBackTime = .2f;
+    [SerializeField] private float knockBackTime = 0.2f;
 
     private Rigidbody2D rb;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
+        {
+            Debug.LogError("Knockback script requires a Rigidbody2D component!");
+        }
     }
 
     public void GetKnockedBack(Transform damageSource, float knockBackThrust)
     {
+        if (rb == null || damageSource == null) return;
+
         GettingKnockedBack = true;
-        Vector2 difference = (transform.position - damageSource.position).normalized * knockBackThrust * rb.mass;
-        rb.AddForce(difference, ForceMode2D.Impulse);
+        rb.velocity = Vector2.zero;
+
+        Vector2 knockDirection = (transform.position - damageSource.position).normalized * knockBackThrust;
+        rb.AddForce(knockDirection, ForceMode2D.Impulse);
+
         StartCoroutine(KnockRoutine());
     }
 
