@@ -50,15 +50,53 @@ You are Echo, a traveler navigating through a world that serves as a metaphor fo
 - **Puzzle System**: Interactable objects with tags & triggers
 - **Scene Management**: Base scene + unlockable area scenes
 
+## 📁 Project Structure
+
+```
+Echo-Quest/
+├── Assets/
+│   ├── Art/                # Pixel assets
+│   │   ├── Characters/     # Player, NPCs, and enemies
+│   │   ├── Environment/    # Tiles, props, and backgrounds
+│   │   └── UI/            # Interface elements and icons
+│   ├── Audio/              # Background music & SFX
+│   │   ├── Music/         # Zone-specific background tracks
+│   │   └── SFX/           # Sound effects and ambient sounds
+│   ├── Scenes/             # Scene files per zone
+│   │   ├── MainMenu/      # Main menu and settings
+│   │   ├── WhisperingWoods/ # First zone
+│   │   └── Common/        # Shared scene elements
+│   ├── Scripts/            # Player, Interactables, Dialogue
+│   │   ├── Player/        # Player movement and controls
+│   │   ├── NPCs/          # Character behaviors and dialogue
+│   │   ├── UI/            # Interface and menu systems
+│   │   └── Utils/         # Helper functions and utilities
+│   └── Prefabs/           # Reusable game objects
+├── README.md               # Project documentation
+└── ProjectSettings/        # Unity settings
+```
+
 ## 🛠️ Development Setup
 
 1. Clone the repository
 2. Open the project in Unity (version X.X.X)
-3. Open the main scene in `Assets/Scenes/MainScene.unity`
+3. Open the main scene in `Assets/Scenes/MainMenu/MainMenu.unity`
+
+### Required Unity Packages
+- 2D Tilemap Editor
+- Cinemachine
+- TextMeshPro
+- Input System
 
 ## 🤝 Contributing
 
 We welcome contributions! Please read our contributing guidelines before submitting pull requests.
+
+### Development Guidelines
+1. Follow Unity's best practices for 2D game development
+2. Use the provided project structure for organizing assets
+3. Document new features and changes
+4. Test thoroughly before submitting pull requests
 
 ## 📝 License
 
@@ -68,6 +106,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to all contributors and supporters
 - Special thanks to the mental health community for inspiration
+- Unity Technologies for the game engine
+- The pixel art community for inspiration and resources
 
 ---
 
