@@ -98,6 +98,35 @@ We welcome contributions! Please read our contributing guidelines before submitt
 3. Document new features and changes
 4. Test thoroughly before submitting pull requests
 
+## 🚀 Future Improvements & Vision
+
+We aim to turn **EchoQuest** into an engaging tool for **mental health education and awareness**.
+
+### 🎯 What's Coming Next
+
+* **Mental Health Lessons:**
+  Add real-life coping tips and certified resources through interactive stories.
+
+* **New Emotion Zones:**
+  * **Storm Valley** – Anxiety & panic
+  * **Shifting Sands** – Dealing with change
+  * **Sanctuary City** – Boosting self-worth
+
+* **Multi-language Support:**
+  Including Bangla for rural users.
+
+* **Emotional Check-ins:**
+  Short quizzes and reflections to boost awareness.
+
+* **Therapist Collaboration:**
+  Ensure accurate and helpful content.
+
+* **Educational Use:**
+  Share free versions with schools and universities.
+
+* **Mobile App:**
+  Build Android/iOS versions for wider access.
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
